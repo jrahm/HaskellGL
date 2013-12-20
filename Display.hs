@@ -8,3 +8,4 @@ display = do
   clear [ColorBuffer]
   cube 0.2
   flush
+  swapBuffers

@@ -4,6 +4,8 @@ import Bindings
 main :: IO ()
 main = do
   (_progName, _args) <- getArgsAndInitialize
+  initialDisplayMode $= [WithDepthBuffer,DoubleBuffered]
+  
   _window <- createWindow "Hello World"
   displayCallback $= display
   reshapeCallback $= Just reshape
